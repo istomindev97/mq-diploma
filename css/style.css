@@ -165,6 +165,7 @@ li {
   position: relative;
 
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .first {
   background-image: url(../images/trend1.jpg);
@@ -188,6 +189,11 @@ li {
   text-transform: uppercase;
   color: #b59f5b;
 }
+
+.trands-tag-link:hover{
+  text-decoration: underline;
+}
+
 .trands-text {
   font-size: 20px;
   line-height: 24px;
@@ -197,9 +203,16 @@ li {
   font-family: "Open Sans";
   z-index: 2;
   position: relative;
-
   margin-top: 15px;
 }
+
+.trands-text:hover {
+  color: #b59f5b;
+  cursor: pointer;
+}
+
+
+
 .second {
   background-image: url(../images/trend2.jpg);
 }
@@ -229,10 +242,10 @@ li {
 
 .container2 {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   max-width: 1200px;
   flex-direction: row;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -682,12 +695,12 @@ li {
 .products-list {
   margin: 0 auto;
   display: flex;
-  align-items: start;
+  /* flex-wrap: wrap; */
   gap: 100px;
   padding: 0px 30px 0px 30px;
 }
 .product-card {
-  width: calc(100% / 3);
+  width: calc(100% / 3); 
   display: flex;
   flex-direction: column;
 }
@@ -703,18 +716,64 @@ li {
 .product-header {
 }
 .product-text {
-}
-.product-price {
-  display: inline-block;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+
+  margin-bottom: 20px;
+
 }
 
-body > a.product-btn {
+.old-price {
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+.product-link {
+  color: #b59f5b;
+  
+}
+
+.product-link:hover {
+  text-decoration: underline;
+
+}
+
+.product-price {
   display: inline-block;
-  margin-left: auto;
-  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bottom-line {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 140px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  
+
   color: #fff;
   background-color: #b59f5b;
+}
+
+.product-btn:hover {
+  background-color: black;
 }
 
 .popup {
@@ -727,6 +786,10 @@ body > a.product-btn {
   z-index: 10;
   display: none;
 }
+
+
+
+
 .popup-body {
   min-height: 100%;
   display: flex;
@@ -943,4 +1006,74 @@ body > a.product-btn {
   color: white;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+
+
+
+.products-list {
+  flex-wrap: wrap;
+}
+
+.menu-list {
+  display: none;
+  position: relative;
+}
+
+.menu::after {
+  content: '';
+  display: block;
+
+  width: 40px;
+  height: 40px;
+  
+  top: 32px; 
+  right: 43px; 
+  
+
+  position: absolute;
+  
+  background-image: url("/svg/iconizer-lines_menu_burger_icon_123889.svg");
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  background-size: 100%;
+  z-index: 10;
+  fill: white;
+  
+}
+
+
+.trands-content {
+  gap: 4px;
+  flex-wrap: wrap;
+} 
+
+.trands-content-block {
+  width: calc(50% - 4px);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 272px);
+  flex-grow: 1;
+  margin-right: 35px;
+}
+
+ .article {
+  flex-direction: column;
+}
+
+
+.date-author {
+  margin-bottom: 10px;
+  font-size: 12px;
+  margin-top: 12px;
+}
+ */
+
+
 }
