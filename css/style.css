@@ -385,7 +385,7 @@ li {
 .search-container {
   margin-top: 60px;
   display: flex;
-  justify-content: space-between;
+
 }
 
 .search-input {
@@ -1008,52 +1008,62 @@ li {
   cursor: pointer;
 }
 
+@media  (max-width: 1200px) {
+
+  .products-list {
+    flex-wrap: wrap;
+  }
+  
+  .menu-list {
+    display: none;
+    position: relative;
+  }
+  
+  .menu::after {
+    content: '';
+    display: block;
+  
+    width: 40px;
+    height: 40px;
+    
+    top: 32px; 
+    right: 43px; 
+    
+  
+    position: absolute;
+    
+    background-image: url("/svg/iconizer-lines_menu_burger_icon_123889.svg");
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    background-size: 100%;
+    z-index: 10;
+    fill: white;
+    
+  }
+
+  .trands-content {
+    gap: 4px;
+    flex-wrap: wrap;
+  } 
+
+}
+
 @media (min-width: 641px) and (max-width: 1200px) {
 
-
-
-.products-list {
-  flex-wrap: wrap;
-}
-
-.menu-list {
-  display: none;
-  position: relative;
-}
-
-.menu::after {
-  content: '';
-  display: block;
-
-  width: 40px;
-  height: 40px;
-  
-  top: 32px; 
-  right: 43px; 
-  
-
-  position: absolute;
-  
-  background-image: url("/svg/iconizer-lines_menu_burger_icon_123889.svg");
-
-  background-repeat: no-repeat;
-  background-position: center center;
-  
-  background-size: 100%;
-  z-index: 10;
-  fill: white;
-  
-}
-
-
-.trands-content {
-  gap: 4px;
-  flex-wrap: wrap;
-} 
 
 .trands-content-block {
   width: calc(50% - 4px);
 }
+
+  /* @media (orientation: landscape) {
+    .trands-content-block {
+      width: calc(25% - 4px);
+    }
+  }  */
+
+
 
 .main {
   display: flex;
@@ -1073,7 +1083,80 @@ li {
   font-size: 12px;
   margin-top: 12px;
 }
- */
+ 
 
 
+}
+
+
+@media (max-width: 640px)  {
+
+
+  .header {
+   
+    background-image: url("/images/banner-mobile.jpg");
+    background-position: center center;
+    background-size: cover;
+
+  }
+
+  .header-top {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-top: 150px;
+    width: 300px;
+  }
+
+  .title {
+width: 80%;
+  }
+
+  .trands-content-block {
+    width: calc(100% - 4px);
+  }
+
+  @media (orientation: landscape) {
+    .trands-content-block {
+      width: calc(50% - 4px);
+    }
+  }
+
+  .container2 {
+    flex-direction: column;
+  }
+
+  .main  {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .article {
+    flex-direction: column;
+  }
+
+  .aside {
+    width: 100%;
+  }
+
+
+  .search-input {
+    width: 100%;
+  }
+
+  .products-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    .socials {
+      width: 100%;
+    }
 }
