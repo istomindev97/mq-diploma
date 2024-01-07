@@ -38,6 +38,8 @@ li {
   padding: 0;
 }
 
+/*================================HEADER============================*/
+
 .header {
   display: flex;
   box-sizing: border-box;
@@ -132,6 +134,8 @@ li {
 .menu-item:hover {
   text-decoration: underline;
 }
+
+/*================================TRANDS============================*/
 
 .trands-header {
   text-transform: uppercase;
@@ -237,24 +241,27 @@ li {
 }
 
 .central-part {
-  margin-top: 64px;
+  display: flex;
+  padding: 63px 15px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+
 }
 
 .container2 {
   display: flex;
-  /* justify-content: space-between; */
-  max-width: 1200px;
-  flex-direction: row;
-  /* flex-wrap: nowrap; */
-  margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  box-sizing: border-box;
+  flex-direction: column;
+  width: 100%;
 }
 
+/*================================MAIN============================*/
+
 .main {
-  width: 780px;
-  margin-right: 120px;
+  width: 100%;
+  display: flex;
+  margin-top: 59px;
 }
 
 .img-article {
@@ -271,6 +278,8 @@ li {
   align-items: flex-start;
 }
 
+/*================================ASIDE============================*/
+
 .aside {
   width: 272px;
 }
@@ -278,7 +287,7 @@ li {
 .tag-link {
   text-decoration: none;
   text-transform: uppercase;
-  color: #b59f5b;
+  color: #b59f5bd3;
 }
 
 .tag-link:hover {
@@ -611,6 +620,8 @@ li {
   font-family: "Open Sans";
 }
 
+/*================================FOOTER============================*/
+
 .socials {
   display: flex;
 
@@ -674,6 +685,8 @@ li {
 .third {
   background-image: url(../images/trend3.jpg);
 }
+
+/*================================PRODUCTS============================*/
 
 .products-header {
   text-transform: uppercase;
