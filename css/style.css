@@ -625,7 +625,7 @@ li {
 .socials {
   display: flex;
 
-  width: 1170px;
+  width: 100%;
   background-color: #f4f7f6;
   margin: 0 auto;
 
@@ -1104,6 +1104,10 @@ li {
 
 @media (max-width: 640px)  {
 
+
+  .img-article {
+    width: 100%;
+  }
 
   .header {
    
