@@ -89,6 +89,11 @@ li {
   margin-bottom: 102px;
 }
 
+
+.product-card-img {
+  width: 100%;
+}
+
 .title {
   font-family: "Open Sans", sans-serif;
   font-size: 45px;
@@ -1107,6 +1112,7 @@ li {
 
   .img-article {
     width: 100%;
+    margin-right: 0;
   }
 
   .header {
