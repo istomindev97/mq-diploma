@@ -1117,7 +1117,7 @@ li {
 
   .header {
    
-    background-image: url("/images/banner-mobile.jpg");
+    background-image: url("images/banner-mobile.jpg");
     background-position: center center;
     background-size: cover;
 
